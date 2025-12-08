@@ -4,7 +4,7 @@ public class TimePrinter {
             int elapsedSeconds = 0;
             while (true) {
                 try {
-                    System.out.println("×àñ â³ä çàïóñêó: " + elapsedSeconds + " ñåêóíä");
+                    System.out.println("Time since start: " + elapsedSeconds + " seconds");
                     Thread.sleep(1000); 
                     elapsedSeconds++;
                 } catch (InterruptedException e) {
@@ -17,7 +17,7 @@ public class TimePrinter {
             while (true) {
                 try {
                     Thread.sleep(5000); 
-                    System.out.println("Ìèíóëî 5 ñåêóíä.");
+                    System.out.println("5 seconds have passed.");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -29,3 +29,4 @@ public class TimePrinter {
     }
 
 }
+
