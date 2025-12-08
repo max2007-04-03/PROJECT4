@@ -4,8 +4,8 @@ public class TimePrinter {
             int elapsedSeconds = 0;
             while (true) {
                 try {
-                    System.out.println("Час від запуску: " + elapsedSeconds + " секунд");
-                    Thread.sleep(1000); // Затримка в 1 секунду
+                    System.out.println("Г—Г Г± ГўВіГ¤ Г§Г ГЇГіГ±ГЄГі: " + elapsedSeconds + " Г±ГҐГЄГіГ­Г¤");
+                    Thread.sleep(1000); 
                     elapsedSeconds++;
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -16,8 +16,8 @@ public class TimePrinter {
         Thread fiveSecondsThread = new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(5000); // Затримка в 5 секунд
-                    System.out.println("Минуло 5 секунд.");
+                    Thread.sleep(5000); 
+                    System.out.println("ГЊГЁГ­ГіГ«Г® 5 Г±ГҐГЄГіГ­Г¤.");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -27,4 +27,5 @@ public class TimePrinter {
         secondsThread.start();
         fiveSecondsThread.start();
     }
+
 }
